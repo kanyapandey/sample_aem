@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Content-Package-Roots: /content/boot,/apps/boot,/conf/boot
+Content-Package-Type: mixed
+Content-Package-Id: my_packages:sample_aem
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/boot"/>
+    <filter root="/conf/boot"/>
+    <filter root="/content/boot"/>
+</workspaceFilter>

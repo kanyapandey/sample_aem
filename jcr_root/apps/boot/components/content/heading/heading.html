@@ -1,0 +1,23 @@
+<sly
+        data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}"
+        data-sly-call="${clientLib.all @ categories='boot.components.heading'}"/>
+
+
+<sly data-sly-use.templates="boot/components/content/core/templates.html"/>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!properties.title}"/>
+
+
+<div class="container-fluid padding">
+    <div class="row padding" style="text-align: ${properties.aligntype || 'initial' @ context='styleString'};background-color: ${properties.background || 'initial' @ context='styleString'};">
+		<div class="col-12">
+            <h2>${properties.title}</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-google-plus-g"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+</div>

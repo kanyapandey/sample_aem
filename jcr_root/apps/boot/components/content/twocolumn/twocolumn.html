@@ -1,0 +1,23 @@
+<sly
+        data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}"
+        data-sly-call="${clientLib.all @ categories='boot.components.twocolumn'}"/>
+
+
+<sly data-sly-use.templates="boot/components/content/core/templates.html"/>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!properties.title}"/>
+
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<h2>Our Philosophy</h2>
+			<p>${properties.title1 || "Headline" @ context='html'}</p>
+			<br>
+		</div>
+		<div class="col-lg-6">:
+			<img src="img/bootstrap2.png" class="img-fluid" style="background-image: url('')">
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
